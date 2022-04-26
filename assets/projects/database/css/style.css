@@ -6,9 +6,9 @@
 }
 
 :root {
-    --grid-template: 1.5em repeat(5, 10em);
+    --grid-template: 1.5em repeat(5, minmax(2em, 10em));
     --grid-span-6: span 6;
-    --h3-font-size: 1.5rem;
+    --h3-font-size: clamp(.8rem, 2vw, 2.5rem);
 }
 
 .grid-table {
@@ -17,7 +17,7 @@
     grid-template-columns: var(--grid-template);
     justify-content: center;
     justify-items: center;
-    margin-top: 3em;
+    margin: 3em 2em;
 }
 
 h3 {
@@ -53,4 +53,11 @@ input:focus {
 
 .user-ID {
     justify-self: center;
+}
+
+@media (max-width: 540px) {
+    .button * {
+        margin-right: .5em;
+        padding: .5em;
+    }
 }
