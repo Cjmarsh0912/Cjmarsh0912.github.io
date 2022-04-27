@@ -90,12 +90,12 @@ hr {
 
 /* 4. Output */
 .output {
-  -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-column-gap: 1em;
   align-items: center;
   background-color: var(--bc-transparent);
   border-radius: 12px;
-  -webkit-column-gap: 1em;
   column-gap: 1em;
   display: -ms-grid;
   display: grid;
@@ -109,8 +109,8 @@ hr {
 }
 
 .output img {
-  max-width: clamp(.5rem, 2vw, 1rem);
   height: auto;
+  max-width: clamp(.5rem, 2vw, 1rem);
 }
 
 .icon {
@@ -183,15 +183,15 @@ hr {
 
 .hourly,
 .daily {
-  -webkit-box-align: center;
   -ms-flex-align: center;
+  -ms-flex-pack: start;
+  -webkit-box-align: center;
+  -webkit-box-pack: start;
   align-items: center;
   display: -ms-grid;
   display: grid;
   font-size: var(--fs-sm);
   gap: 2em;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: start;
   justify-items: center;
   padding: 1em 0;
@@ -210,18 +210,18 @@ hr {
 
 .hourly img,
 .daily img {
-  max-width: clamp(1.5rem, 8vw, 5rem);
   height: auto;
+  max-width: clamp(1.5rem, 8vw, 5rem);
 }
 
 .hourly-card,
 .daily-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
   flex-direction: column;
   gap: .5em;
 }
@@ -240,5 +240,13 @@ hr {
   .daily {
     overflow: scroll;
     overflow-y: hidden;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .hourly-forecast,
+  .daily-forecast {
+    width: 19.5em;
   }
 }
