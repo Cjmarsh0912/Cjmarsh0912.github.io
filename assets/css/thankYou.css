@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212931;
+    background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+    background-position: center, center, top center;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: auto, auto, 100% auto;
+    border: 2px solid black;
+    display: grid;
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 100vh;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid black;
+    padding: 2em;
+}
+
+.box p {
+    margin: 1em 0;
+    max-width: 75ch;
+}
+
+.box a {
+    border-bottom: dotted 1px;
+    color: #212931;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    color: #18bfef !important;
+}

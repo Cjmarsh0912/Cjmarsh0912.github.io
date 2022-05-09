@@ -57,9 +57,7 @@
 				<header class="major">
 					<span class="date">February 6, 2022</span>
 					<h2><a href="./assets/projects/database/">Database</a></h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo numquam quidem voluptas magni
-						minus. Ipsa ullam, id laboriosam quia aperiam earum, debitis molestiae alias tenetur ut nesciunt
-						vitae ad maiores!</p>
+					<p></p>
 				</header>
 				<a href="./assets/projects/database/" class="image main"><img src="images/image1.jpg" alt="" /></a>
 				<ul class="actions special">
@@ -76,8 +74,7 @@
 					</header>
 					<a href="./assets/projects/weather app/" class="image fit"><img src="images/image2.jpg"
 							alt="" /></a>
-					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+					<p></p>
 					<ul class="actions special">
 						<li><a href="./assets/projects/weather app/" class="button">Check It Out</a></li>
 					</ul>
@@ -90,19 +87,21 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<section>
-				<form method="post" action="#">
+				<form id="frm-contact" method="post" action="https://formsubmit.co/marsh903466@gmail.com">
+					<input type="hidden" name="_next" value="http://127.0.0.1:5500/thankYou.html">
+					<input type="hidden" name="_captcha" value="false">
 					<div class="fields">
 						<div class="field">
 							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+							<input type="text" name="name" id="name" required />
 						</div>
 						<div class="field">
 							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
+							<input type="text" name="email" id="email" required />
 						</div>
 						<div class="field">
 							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3"></textarea>
+							<textarea name="message" id="message" rows="3" required></textarea>
 						</div>
 					</div>
 					<ul class="actions">

@@ -253,6 +253,16 @@
 
 		});
 
-	}
+	};
+
+	// verify whether email is in proper format
+	$('#frm-contact').submit((evt) => {
+		let pattern = /\S+@\S+\.\S+/;
+		if (!pattern.test($('input[name="email"]').val())) {
+			alert('Your email must be in proper format');
+			evt.preventDefault()
+		}
+
+	})
 
 })(jQuery);
