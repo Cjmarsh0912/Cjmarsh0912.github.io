@@ -114,6 +114,10 @@ img {
     .header div:first-child {
         margin: auto;
     }
+
+    .header {
+        justify-content: center;
+    }
 }
 
 /*  3. Intro */
