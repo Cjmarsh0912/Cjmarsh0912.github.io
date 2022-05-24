@@ -72,13 +72,19 @@ span {
 }
 
 .header>* {
-    flex: 0 1 0;
+    flex: 1 1 0;
+}
+
+.header div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
     border-radius: 50%;
-    height: auto;
-    width: clamp(10em, 50vw, 20em);
+    height: clamp(10em, 50vw, 15em);
+    width: clamp(10em, 50vw, 15em);
 }
 
 .header div:nth-child(2) {
@@ -117,6 +123,16 @@ img {
 
     .header {
         justify-content: center;
+    }
+}
+
+@media (max-width: 1109px) {
+    .header>* {
+        flex: 0 1 0;
+    }
+
+    .header div:first-child {
+        display: block;
     }
 }
 
