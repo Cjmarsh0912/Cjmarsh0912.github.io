@@ -136,6 +136,18 @@ img {
     }
 }
 
+@media (min-width: 1300px) {
+    body {
+        width: 1300px;
+        margin: auto;
+        background-color: white;
+    }
+
+    html {
+        background-color: #ea526f;
+    }
+}
+
 /*  3. Intro */
 .intro-header {
     text-align: center;
