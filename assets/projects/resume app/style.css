@@ -1,254 +1,254 @@
 /* 1. General Styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 section {
-    padding: .5em 1.5em;
+  padding: 0.5em 1.5em;
 }
 
 hr {
-    background-color: black;
-    border-color: black;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    width: 100%;
+  background-color: black;
+  border-color: black;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 100%;
 }
 
 header {
-    font-family: var(--fnt-family-Merriweather);
-    font-size: var(--fnt-size-medium);
-    margin-bottom: 1em;
+  font-family: var(--fnt-family-Merriweather);
+  font-size: var(--fnt-size-medium);
+  margin-bottom: 1em;
 }
 
 p {
-    font-family: var(--fnt-family-Open-Sans);
-    font-size: var(--fnt-size-small);
+  font-family: var(--fnt-family-Open-Sans);
+  font-size: var(--fnt-size-small);
 }
 
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 span {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .title {
-    color: #ea526f;
-    font-family: var(--fnt-family-Open-Sans);
-    font-size: var(--fnt-size-lrg);
-    margin-bottom: .5em;
-    margin-left: .5em;
+  color: #ea526f;
+  font-family: var(--fnt-family-Open-Sans);
+  font-size: var(--fnt-size-lrg);
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
 }
 
 :root {
-    --fnt-family-Open-Sans: 'Open Sans', sans-serif;
-    --fnt-family-Merriweather: 'Merriweather' sans-serif;
+  --fnt-family-Open-Sans: 'Open Sans', sans-serif;
+  --fnt-family-Merriweather: 'Merriweather' sans-serif;
 
-    --fnt-size-small: 1.1rem;
-    --fnt-size-medium: 1.5rem;
-    --fnt-size-lrg: 1.8rem;
+  --fnt-size-small: 1.1rem;
+  --fnt-size-medium: 1.5rem;
+  --fnt-size-lrg: 1.8rem;
 
-    --fnt-color-white: white;
-    --fnt-color-black: black;
+  --fnt-color-white: white;
+  --fnt-color-black: black;
 }
 
 /* 2. Header */
 
 .header {
-    align-items: center;
-    background-color: #23B5D3;
-    border-bottom: 2px solid black;
-    color: var(--fnt-color-white);
-    display: flex;
-    flex-wrap: wrap;
-    font-family: var(--fnt-family-Open-Sans);
-    font-size: 1rem;
-    gap: 3em;
-    padding: 1.2em;
+  align-items: center;
+  background-color: #23b5d3;
+  border-bottom: 2px solid black;
+  color: var(--fnt-color-white);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--fnt-family-Open-Sans);
+  font-size: 1rem;
+  gap: 3em;
+  padding: 1.2em;
 }
 
-.header>* {
-    flex: 1 1 0;
+.header > * {
+  flex: 1 1 0;
 }
 
 .header div:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
-    border-radius: 50%;
-    height: clamp(10em, 50vw, 15em);
-    width: clamp(10em, 50vw, 15em);
+  border-radius: 50%;
+  height: clamp(10em, 50vw, 15em);
+  width: clamp(10em, 50vw, 15em);
 }
 
 .header div:nth-child(2) {
-    color: var(--fnt-color-black);
-    font-family: var(--fnt-family-Merriweather);
-    text-align: center;
+  color: var(--fnt-color-black);
+  font-family: var(--fnt-family-Merriweather);
+  text-align: center;
 }
 
-.header div>h1 {
-    font-size: clamp(2rem, 10vw, 4rem);
-    white-space: nowrap;
+.header div > h1 {
+  font-size: clamp(2rem, 10vw, 4rem);
+  white-space: nowrap;
 }
 
-.header div>p {
-    font-size: clamp(.8rem, 2vw, 1.1rem);
+.header div > p {
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
 }
 
 .contact ul li {
-    font-size: var(--fnt-size-small);
-    text-align: start;
+  font-size: var(--fnt-size-small);
+  text-align: start;
 }
 
 .contact a {
-    color: white;
-    transition: font-size .5s;
+  color: white;
+  transition: font-size 0.5s;
 }
 
 .contact a:hover {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
-@media (max-width: 450px) {
-    .header div:first-child {
-        margin: auto;
-    }
+@media screen and (max-width: 450px) {
+  .header div:first-child {
+    margin: auto;
+  }
 
-    .header {
-        justify-content: center;
-    }
+  .header {
+    justify-content: center;
+  }
 }
 
-@media (max-width: 1109px) {
-    .header>* {
-        flex: 0 1 0;
-    }
+@media screen and (max-width: 1109px) {
+  .header > * {
+    flex: 0 1 0;
+  }
 
-    .header div:first-child {
-        display: block;
-    }
+  .header div:first-child {
+    display: block;
+  }
 }
 
-@media (min-width: 1300px) {
-    body {
-        width: 1300px;
-        margin: auto;
-        background-color: white;
-    }
+@media screen and (min-width: 1300px) {
+  body {
+    width: 1300px;
+    margin: auto;
+    background-color: white;
+  }
 
-    html {
-        background-color: #ea526f;
-    }
+  html {
+    background-color: #ea526f;
+  }
 }
 
 /*  3. Intro */
 .intro-header {
-    text-align: center;
+  text-align: center;
 }
 
 .intro {
-    margin: auto;
-    max-width: 125ch;
-    text-align: center;
+  margin: auto;
+  max-width: 125ch;
+  text-align: center;
 }
 
-@media (max-width: 822px) {
-    .intro-header {
-        text-align: start;
-    }
+@media screen and (max-width: 822px) {
+  .intro-header {
+    text-align: start;
+  }
 
-    .intro {
-        margin: 0;
-        text-align: start;
-    }
+  .intro {
+    margin: 0;
+    text-align: start;
+  }
 }
 
 /* 4. Skills */
 .skills {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /*  4.1. Personal skills */
 .personal {
-    margin-bottom: 1em;
-    max-width: 75ch;
+  margin-bottom: 1em;
+  max-width: 75ch;
 }
 
 .personal ul li {
-    list-style-type: disc;
-    margin-bottom: 1em;
-    margin-left: 1.5em;
+  list-style-type: disc;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
 }
 
 /*  4.2. Technical skills */
 .technical {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .technical ul {
-    border-right: 2px solid black;
-    margin-right: 2em;
-    padding-right: 2em;
+  border-right: 2px solid black;
+  margin-right: 2em;
+  padding-right: 2em;
 }
 
 .technical ul:last-child {
-    border-right: none;
+  border-right: none;
 }
 
-@media (max-width: 694px) {
-    .technical {
-        flex-direction: column;
-        width: 10em;
-    }
+@media screen and (max-width: 818px) {
+  .technical {
+    flex-direction: column;
+    width: 10em;
+  }
 
-    .technical ul {
-        margin-bottom: 1em;
-    }
+  .technical ul {
+    margin-bottom: 1em;
+  }
 
-    .technical ul li {
-        margin-bottom: .5em;
-    }
+  .technical ul li {
+    margin-bottom: 0.5em;
+  }
 
-    .technical ul:last-child {
-        border-right: 2px solid black;
-    }
+  .technical ul:last-child {
+    border-right: 2px solid black;
+  }
 }
 
 /*  5. Experience */
 .experience {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .job-title {
-    margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
-.job-duties ul>li {
-    list-style-type: disc;
-    margin-left: 1em;
+.job-duties ul > li {
+  list-style-type: disc;
+  margin-left: 1em;
 }
 
 /*  6. Education */
 .school-name h3 {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .classes h3 {
-    margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-.classes>ul>li {
-    list-style-type: disc;
-    margin-bottom: 1em;
-    margin-left: 2em;
+.classes > ul > li {
+  list-style-type: disc;
+  margin-bottom: 1em;
+  margin-left: 2em;
 }
