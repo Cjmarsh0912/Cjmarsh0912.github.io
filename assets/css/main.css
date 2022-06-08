@@ -4077,12 +4077,12 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     width: 100%;
   }
 
-  #main > .posts > article:nth-child(3) {
-    order: 4 !important;
-  }
-
   #main > .posts > article:nth-child(4) {
     order: 3 !important;
+  }
+
+  #main > .posts > article:nth-child(3) {
+    order: 4 !important;
   }
 
   #main > .posts > article:nth-child(5) {
@@ -4091,6 +4091,14 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
   #main > .posts > article:nth-child(6) {
     order: 6 !important;
+  }
+
+  #main > .posts > article:nth-child(7) {
+    order: 8 !important;
+  }
+
+  #main > .posts > article:nth-child(8) {
+    order: 7 !important;
   }
 
   #main > .posts > article:nth-child(2n - 1) {
