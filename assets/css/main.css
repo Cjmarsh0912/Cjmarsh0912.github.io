@@ -4101,6 +4101,14 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     order: 7 !important;
   }
 
+  #main > .posts > article:nth-child(9) {
+    order: 9 !important;
+  }
+
+  #main > .posts > article:nth-child(10) {
+    order: 10 !important;
+  }
+
   #main > .posts > article:nth-child(2n - 1) {
     border-left-width: 2px;
   }
